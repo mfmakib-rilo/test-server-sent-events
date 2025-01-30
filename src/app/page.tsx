@@ -20,7 +20,8 @@ export default function Home() {
     }
   }, [])
 
-  const handleSubmit = async (e) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleSubmit = async (e:any) => {
     e.preventDefault()
     if (newItemName.trim()) {
       await addItem(newItemName)
